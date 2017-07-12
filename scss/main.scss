@@ -1,0 +1,226 @@
+body{
+	background-color: #000010;
+	color: #fff;
+}
+.borderblue{
+	border: solid 3px blue;
+}
+.borderred{
+	border: solid 3px red;
+}
+.page-holder {
+	//position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	//background-color: #312F2F;
+	
+}
+nav {
+	position: absolute;
+	background-color: #2A2D34;
+	height: 10%;
+	width: 100%;
+	color:beige;
+	
+}
+nav h1{
+	font-size: 14px;
+    text-transform: uppercase;
+	//text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+	//text-align: center;
+	margin: 30px;
+}
+.footer-main{
+	background-color: #2A2D34;
+	height: 10%;
+	width: 100%;
+	bottom: 0px;
+}
+.btn-square {
+    border-radius: 0;
+    line-height: 1.875rem;
+    padding: 0.875rem;
+}
+.btn-inverse {
+    background-color: #2c3e50;
+    color: #fff;
+}
+.icon-size {
+    font-size: 1.875rem;
+}
+.btn {
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+a {
+    color: #45b29d;
+    text-decoration: none;
+}
+main {
+	background-color: #272838;
+}
+.border{
+	border: 1px solid blue;
+}
+/* ---------------------------------------------- */
+/* PORTFOLIO ITEMS */
+/* ---------------------------------------------- */
+.img-beer {
+	display: block;
+    text-align: center;
+    //max-width: 69px;
+	//max-height: 380px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.item-photo img {
+	display: block;
+    text-align: center;
+    margin: auto;
+	opacity:1;
+  	z-index: 0;
+	//transform: scale(1.15);
+  	-webkit-transition:all 500ms ease-out;
+  	transition:all 500ms ease-out;
+}
+
+.item-holder:hover img{
+  opacity:0.16;
+  -webkit-transform:scale3d(0.98,0.98,1);
+  -ms-transform:scale3d(0.98,0.98,1);
+  transform:scale3d(0.98,0.98,1);
+}
+
+.item-holder {
+	//position: absolute;
+	color: #fff;
+}
+.item-holder img {
+	height: auto;
+}
+.item-holder section {
+	position:absolute;
+ 	 width:100%;
+}
+
+.item-holder h1 {
+	font-size: 14px;
+    text-transform: uppercase;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+
+.item-holder h2 {
+	font-family: "Merriweather", serif;
+	text-transform: none;
+    font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 120%;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+}
+.item-holder p {
+  margin-top:0;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+#storyline {
+  /* BOTH of the following are required for text-overflow */
+  //white-space: nowrap;
+  overflow: hidden; 
+  text-overflow-multiline:ellipsis;
+}
+
+.overflow-ellipsis {
+  //text-overflow: ellipsis;
+  max-height: 3.6em; }
+
+.item-holder .content-holder{
+
+  opacity: 0;
+  max-height: 50%;
+  padding:0 40px;
+  text-align: center;
+  z-index:1;
+  bottom:150px;
+  transition:all 500ms ease-in-out;
+  -webkit-transform: translate3d(0,0,0) !important;
+  transform: translate3d(0,0,0) !important;
+}
+
+.item-holder:hover .content-holder{
+	bottom:35%;
+  	opacity: 1;
+}
+.item-holder .footer-front {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin-bottom:0;
+  padding:0 40px;
+  overflow: hidden;
+  opacity:0;
+  -webkit-transition:all 500ms ease-in-out;
+  transition:all 500ms ease-in-out;
+}
+.item-holder:hover .footer-front{
+  opacity:1;
+}
+
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.no-padding-margin{
+	margin: 0;
+	padding: 0;
+}
+/*--------------NAVBAR-----------------------------*/
+nav.navbar{
+	background-color: #2A2D34;
+    background-image:none;
+	height: 87px;
+}
+/*--------------MEDIA QUERY______________________*/
+@media screen and (max-width: 576px){
+	.item-holder:hover .content-holder#flora{
+	bottom:50%;
+  	opacity: 1;
+}
+	
+	.item-holder p {
+  margin-top:0;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 0,75em;
+  font-weight: 600;
+  line-height: 1em;
+}
+}
