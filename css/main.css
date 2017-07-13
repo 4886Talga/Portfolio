@@ -81,6 +81,7 @@ main {
   display: block;
   text-align: center;
   margin: auto;
+  margin-top: 0;
   opacity: 1;
   z-index: 0;
   -webkit-transition: all 500ms ease-out;
