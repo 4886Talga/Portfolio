@@ -144,6 +144,9 @@ main {
   bottom: 50%;
   opacity: 1; }
 
+.item-holder:hover .content-holder.long-text {
+  bottom: 35%; }
+
 .item-holder .footer-front {
   position: absolute;
   bottom: 50px;
