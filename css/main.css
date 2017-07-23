@@ -71,16 +71,10 @@ main {
 /* ---------------------------------------------- */
 /* PORTFOLIO ITEMS */
 /* ---------------------------------------------- */
-.img-beer {
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding-top: 20px; }
-
 .item-photo img {
   display: block;
   text-align: center;
-  margin: auto;
+  margin: 0;
   margin-top: 0;
   opacity: 1;
   z-index: 0;
@@ -88,16 +82,15 @@ main {
   transition: all 500ms ease-out; }
 
 .item-holder:hover img {
-  opacity: 0.16;
+  opacity: 0.65;
   -webkit-transform: scale3d(0.98, 0.98, 1);
   -ms-transform: scale3d(0.98, 0.98, 1);
   transform: scale3d(0.98, 0.98, 1); }
 
 .item-holder {
-  color: #fff; }
-
-.item-holder img {
-  height: auto; }
+  color: #fff;
+  background-color: #000;
+  max-height: 560px; }
 
 .item-holder section {
   position: absolute;
@@ -148,12 +141,12 @@ main {
   transform: translate3d(0, 0, 0) !important; }
 
 .item-holder:hover .content-holder {
-  bottom: 35%;
+  bottom: 50%;
   opacity: 1; }
 
 .item-holder .footer-front {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   margin-bottom: 0;
   padding: 0 40px;
@@ -184,17 +177,39 @@ nav.navbar {
   height: 87px; }
 
 /*--------------MEDIA QUERY______________________*/
-@media screen and (max-width: 576px) {
-  .item-holder:hover .content-holder#flora {
-    bottom: 50%;
+@media (max-width: 575px) {
+  .item-holder {
+    max-height: 380px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .item-holder {
+    max-height: 380px; }
+
+  .item-holder .content-holder {
+    bottom: 50px; }
+
+  .item-holder:hover .content-holder {
+    bottom: 40%;
     opacity: 1; }
 
-  .item-holder p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', Georgia, serif;
-    font-size: 0,75em;
-    font-weight: 600;
-    line-height: 1em; } }
+  .item-holder .footer-front {
+    bottom: 0px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .item-holder {
+    max-height: 380px; }
+
+  .item-holder .content-holder {
+    bottom: 20px; }
+
+  .item-holder:hover .content-holder {
+    bottom: 35%;
+    opacity: 1; }
+
+  .item-holder:hover .content-holder.long-text {
+    bottom: 50%;
+    opacity: 1;
+    padding: 0 10px; }
+
+  .item-holder .footer-front {
+    bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
