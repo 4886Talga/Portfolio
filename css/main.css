@@ -182,7 +182,40 @@ nav.navbar {
 /*--------------MEDIA QUERY______________________*/
 @media (max-width: 575px) {
   .item-holder {
-    max-height: 380px; } }
+    max-height: 380px; }
+
+  .item-holder .content-holder {
+    bottom: 50px; }
+
+  .item-holder:hover .content-holder {
+    bottom: 40%;
+    opacity: 1; }
+
+  .item-holder .footer-front {
+    bottom: 0px; }
+
+  .item-holder p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1.25em; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  .item-holder .content-holder {
+    bottom: 20px; }
+
+  .item-holder:hover .content-holder {
+    bottom: 35%;
+    opacity: 1; }
+
+  .item-holder:hover .content-holder.long-text {
+    bottom: 50%;
+    opacity: 1;
+    padding: 0 10px; }
+
+  .item-holder .footer-front {
+    bottom: 20px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .item-holder {
     max-height: 380px; }
