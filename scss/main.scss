@@ -224,13 +224,8 @@ nav.navbar{
   bottom:0px;
  }
 	.item-holder p {
-  margin-top:0;
-  margin-bottom: 10px;
-  font-family: 'Roboto Slab', Georgia, serif;
   font-size: 0.75em;
-  font-weight: 600;
-  line-height: 1.25em;
-}
+ }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -251,10 +246,13 @@ nav.navbar{
 .item-holder .footer-front {
   bottom:20px;
  }
+.item-holder p {
+  font-size: 0.75em;
+ }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 .item-holder {
 	max-height: 380px;
 }
@@ -269,11 +267,13 @@ nav.navbar{
 .item-holder .footer-front {
   bottom:0px;
  }
-
+.item-holder p {
+  font-size: 0.75em;
+ }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
 	.item-holder {
 	max-height: 380px;
 }

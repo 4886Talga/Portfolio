@@ -195,12 +195,7 @@ nav.navbar {
     bottom: 0px; }
 
   .item-holder p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', Georgia, serif;
-    font-size: 0.75em;
-    font-weight: 600;
-    line-height: 1.25em; } }
+    font-size: 0.75em; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .item-holder .content-holder {
     bottom: 20px; }
@@ -215,8 +210,11 @@ nav.navbar {
     padding: 0 10px; }
 
   .item-holder .footer-front {
-    bottom: 20px; } }
-@media (min-width: 768px) and (max-width: 991px) {
+    bottom: 20px; }
+
+  .item-holder p {
+    font-size: 0.75em; } }
+@media (min-width: 768px) and (max-width: 1024px) {
   .item-holder {
     max-height: 380px; }
 
@@ -228,8 +226,11 @@ nav.navbar {
     opacity: 1; }
 
   .item-holder .footer-front {
-    bottom: 0px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+    bottom: 0px; }
+
+  .item-holder p {
+    font-size: 0.75em; } }
+@media (min-width: 1025px) and (max-width: 1199px) {
   .item-holder {
     max-height: 380px; }
 
